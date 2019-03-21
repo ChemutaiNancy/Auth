@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MakeBookingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/txtPhoneNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone Number"
+            android:textSize="25sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="10dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select route"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"/>
+
+        <Spinner
+            android:id="@+id/spinnerRoute"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:entries="@array/Route"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Bus Company"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"/>
+        <Spinner
+            android:id="@+id/spinnerBusCompany"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:entries="@array/BusCompany"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select seat number"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"/>
+        <Spinner
+            android:id="@+id/spinnerSeatNo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:entries="@array/SeatNo"/>
+
+        <EditText
+            android:id="@+id/etTravelDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="date"
+            android:layout_marginBottom="10dp"
+            android:textSize="25sp"
+            android:hint="Travel date"/>
+
+        <Button
+            android:id="@+id/btnLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:textSize="20sp"
+            android:hint="Pickup location"
+            android:textColor="@android:color/black"
+            android:onClick="chooseLocation"/>
+
+        <Button
+            android:id="@+id/btnBook"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Book"
+            android:textSize="25sp"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
